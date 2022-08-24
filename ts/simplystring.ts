@@ -1,4 +1,3 @@
-
 /**
  * Function to compare to strings.
  * Returns a number between 0 and 1 that indicates
