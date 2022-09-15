@@ -17,11 +17,11 @@ export function compareTwoStrings(str1, str2, print) {
         var { shortStr, longStr } = swap(shortStr, longStr);
     }
     //get the editDistance
-    var editDistanceScore = editDistance(shortStr, longStr);
+    var simScore = similarityScore(shortStr, longStr);
     if (print) {
-        console.log('editDistanceScore:', editDistanceScore);
+        console.log('Similarity Score:', simScore);
     }
-    return editDistanceScore;
+    return simScore;
 }
 function swap(shortStr, longStr) {
     return { shortStr: longStr, longStr: shortStr };
@@ -31,7 +31,7 @@ function swap(shortStr, longStr) {
  * @param shortStr shorter of the two strings
  * @param longStr longer to the two strings
  */
-function editDistance(shortStr, longStr, print) {
+function similarityScore(shortStr, longStr, print) {
     if (shortStr.length == 0) {
         return shortStr.length;
     }
@@ -94,8 +94,8 @@ function editDistance(shortStr, longStr, print) {
         console.log('TotalScore:', totalScore);
         console.log('shortArrLength:', shortArrLength);
     }
-    var editDistanceScore = totalScore / (shortArrLength);
-    return editDistanceScore;
+    var simScore = totalScore / (shortArrLength);
+    return simScore;
 }
 /**
 *
