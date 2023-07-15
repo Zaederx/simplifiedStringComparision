@@ -1,10 +1,11 @@
 {
   "name": "simplystring-comparision",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Simplified solution to the two string comparision problem. Returns a result between 0 and 1 for how similar two strings are. 0 - not very similar; closer to 1 - very similar.",
   "main": "js/simplystring.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
+    "tsc": "tsc",
     "test": "node js/simplytest.js"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Zaederx/simplifiedStringComparision/issues"
   },
-  "homepage": "https://github.com/Zaederx/simplifiedStringComparision#readme"
+  "homepage": "https://github.com/Zaederx/simplifiedStringComparision#readme",
+  "devDependencies": {
+    "printformatted-js": "^1.0.4"
+  }
 }
