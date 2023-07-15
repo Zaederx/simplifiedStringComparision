@@ -19,7 +19,7 @@
     {
         var {shortStr, longStr} = swap(shortStr, longStr)
     }
-    //get the editDistance
+    //get the similarityScore
     var simScore = similarityScore(shortStr, longStr)
     
     if(print)

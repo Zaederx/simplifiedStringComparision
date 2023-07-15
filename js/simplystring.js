@@ -16,7 +16,7 @@ export function compareTwoStrings(str1, str2, print) {
     if (shortStr.length > longStr.length) {
         var { shortStr, longStr } = swap(shortStr, longStr);
     }
-    //get the editDistance
+    //get the similarityScore
     var simScore = similarityScore(shortStr, longStr);
     if (print) {
         console.log('Similarity Score:', simScore);
