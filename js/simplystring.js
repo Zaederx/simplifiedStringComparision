@@ -17,7 +17,7 @@ export function compareTwoStrings(str1, str2, print) {
         var { shortStr, longStr } = swap(shortStr, longStr);
     }
     //get the similarityScore
-    var simScore = similarityScore(shortStr, longStr);
+    var simScore = similarityScore(shortStr, longStr, print);
     if (print) {
         console.log('Similarity Score:', simScore);
     }

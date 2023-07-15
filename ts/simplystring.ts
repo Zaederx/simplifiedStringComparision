@@ -20,7 +20,7 @@
         var {shortStr, longStr} = swap(shortStr, longStr)
     }
     //get the similarityScore
-    var simScore = similarityScore(shortStr, longStr)
+    var simScore = similarityScore(shortStr, longStr, print)
     
     if(print)
     {
@@ -120,7 +120,8 @@
  * @param found whether the char has been found - either 0 or 1
  * @param distance how far the char was found from it's array position
  */
-function charFoundDistanceScore(found:0|1,distance:number):number {
+function charFoundDistanceScore(found:0|1,distance:number):number 
+{
     var score = 0
     if(found) 
     { 

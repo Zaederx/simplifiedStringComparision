@@ -1,6 +1,6 @@
 {
   "name": "simplystring-comparision",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Simplified solution to the two string comparision problem. Returns a result between 0 and 1 for how similar two strings are. 0 - not very similar; closer to 1 - very similar.",
   "main": "js/simplystring.js",
   "type": "module",
